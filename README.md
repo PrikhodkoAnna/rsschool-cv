@@ -1,1 +1,1 @@
-https://PrikhodkoAnna.github.io/rsschool-cv/cv
+https://prikhodkoanna.github.io/rsschool-cv
