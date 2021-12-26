@@ -1,102 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-          integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
-    <title>CV by Hanna Prikhodko</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0  maximum-scale=1.0, minimum-scale=1.0" />
+        <link rel="stylesheet" href="style.css">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!--Import materialize.css-->
+        <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+            integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./a11y-dark.min.css">
+        <script src="./highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <title>CV by Hanna Prikhodko</title>
 
-</head>
-<body>
-<div class="main-container">
-    <div class="main-section">
-        <aside class="side-bar">
-            <img class="my-photo" src="https://avatars.githubusercontent.com/u/81716142?v=4" alt="photo">
-            <section class="side-content">
-                <h3 class="side-header">Contacts</h3>
-                <ul class="contacts">
-                    <li><i class="fas fa-envelope side-icon"></i>prikhodkoannav@gmail.com</li>
-                    <li><i class="fas fa-phone-square side-icon"></i>+375297542420</li>
-                    <li><i class="fab fa-telegram side-icon"></i>prikhodkoannav</li>
-                </ul>
-            </section>
-            <section class="side-content">
-                <h3 class="side-header">Programming skills</h3>
-                <h4 class="small-side-header">Languages and technologies:</h4>
-                <ul>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <h4 class="small-side-header">Tools and environment:</h4>
-                <ul>
-                    <li>Git</li>
-                    <li>Webstorm</li>
-                    <li>MS Visual Studio Code</li>
-                </ul>
-            </section>
-        </aside>
-        <main class="main-content">
-            <header>
-                <h1 class="name">Hanna Prikhodko</h1>
-                <h2 class="goal">Junior Frontend Developer</h2>
-            </header>
-            <section class="main-info">
-                <h3 class="main-content-header"><i class="fas fa-user-circle main-icon"></i>About me</h3>
-                <p class="descript">I have 8 years’ experience of stress resistance and attention to details due to the vast logistics practice (improvement of business processes, negotiations, contracts)
+    </head>
+    <body>
+            <div class="container header-container">
+                <header class="header">
+                        <nav class="nav">
+                            <div class="nav-wrapper">
+                                <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                                <ul id="nav-mobile" class="right hide-on-med-and-down">
+                                    <li class="header-list-item">
+                                        <a href="#about-me" class="header-link">About me</a>
+                                    </li>
+                                    <li class="header-list-item">
+                                        <a href="#education" class="header-link">Education</a>
+                                    </li>
+                                    <li class="header-list-item">
+                                        <a href="#prog-skills" class="header-link">Skills</a>
+                                    </li>
+                                    <li class="header-list-item">
+                                        <a href="#projects" class="header-link">Projects</a>
+                                    </li>
+                                    <li class="header-list-item">
+                                        <a href="#contacts" class="header-link">Contacts</a>
+                                    </li>
+                                </ul>
+                        
 
-                    So I have a good track record in logistics projects and it's time to upgrade them in a new sphere.
-                    And now I am highly motivated to gain experience that will help me in my further professional growth as a front-end developer.
+                                <ul id="slide-out" class="sidenav">
+                                    <li class="header-list-item">
+                                        <a href="#about-me" class="header-link">About me</a>
+                                    </li>
+                                    <li class="header-list-item">
+                                        <a href="#education" class="header-link">Education</a>
+                                    </li>
+                                    <li class="header-list-item">
+                                        <a href="#prog-skills" class="header-link">Skills</a>
+                                    </li>
+                                    <li class="header-list-item">
+                                        <a href="#projects" class="header-link">Projects</a>
+                                    </li>
+                                    <li class="header-list-item">
+                                        <a href="#contacts" class="header-link">Contacts</a>
+                                    </li>
+                                </ul>
+                        
+                            </div>
+                        </nav>
+                    <div class="row" style="margin: 0;">
+                        <div class="col s12 m12 l4 xl4 ">
+                            <div class="photo-container">
+                                <img class="my-photo" src ="https://avatars.githubusercontent.com/u/81716142?v=4" alt="photo">
+                            </div>
+                        </div>
+                        <div class="col s12 m12 l8 xl8">
+                            <h1 class="name">Hanna Prikhodko</h1>
+                            <h2 class="goal">Junior Frontend Developer</h2>
+                        </div>
+                    </div>
+                </header>
+            </div>
+            <div class="container">
+                    <div class="main-section">
+                        <div class="row" style="margin: 0;">
+                            <div class="side-panel col s12 m12 l4 xl4">
+                                <aside class="side-bar">
+                                    <section class="side-content">
+                                        <h5 class="side-header"  id="contacts">Contacts</h5>
+                                        <ul class="side-bar-list contacts">
+                                            <li><i class="fas fa-envelope side-icon"></i>prikhodkoannav@gmail.com</li>
+                                            <li><i class="fas fa-phone-square side-icon"></i>+375297542420</li>
+                                            <li><i class="fab fa-telegram side-icon"></i>prikhodkoannav</li>
+                                        </ul>
+                                    </section>
+                                    <section class="side-content">
+                                        <h5 class="side-header" id="prog-skills">Programming skills</h5>
+                                        <h6 class="small-side-header">Languages and technologies:</h6>
+                                        <ul class="side-bar-list">
+                                            <li>HTML</li>
+                                            <li>CSS</li>
+                                            <li>JavaScript</li>
+                                        </ul>
+                                        <h6 class="small-side-header">Tools and environment:</h6>
+                                        <ul class="side-bar-list">
+                                            <li>Git</li>
+                                            <li>Webstorm</li>
+                                            <li>MS Visual Studio Code</li>
+                                        </ul>
+                                    </section>
+                                </aside>
+                            </div>
+                            <div class="col s12 m12 l8 xl8">
+                                <main class="main-content">
+                                    
+                                    <section  id="about-me">
+                                        <h3 class="main-content-header"><i class="fas fa-user-circle main-icon"></i>About me</h3>
+                                        <p class="descript main-info">I have 8 years’ experience of stress resistance and attention to details due to the vast logistics practice (improvement of business processes, negotiations, contracts).
 
-                    I have knowledge in HTML and CSS, also I have basic knowledge of JavaScript.
-                    Besides I'm a perfect team player with a versatile personality and a sense of humor.</p>
-            </section>
-            <section class="main-info">
-                <h3 class="main-content-header"><i class="fas fa-user-graduate main-icon"></i>Education</h3>
-                <p class="educate">2010-2014, Minsk State Economical University (logistics)</p>
-            </section>
-            <section class="main-info">
-                <h3 class="main-content-header"><i class="fas fa-laptop-code main-icon"></i>Courses</h3>
-                <p class="course">RSSchool Frontend Developer 2021</p>
-            </section>
-            <section class="main-info">
-                <h3 class="main-content-header"><i class="fas fa-book main-icon"></i>Self-study (HTML, CSS, JS)</h3>
-                <ul>
-                    <li><a href="https://www.w3schools.com/" target="_blank">w3schools.com</a> </li>
-                    <li><a href="https://learn.javascript.ru/" target="_blank">learn.javascript.ru</a> </li>
-                    <li><a href="https://css-tricks.com/snippets/css/" target="_blank">css-tricks.com</a> </li>
-                    <li><a href="https://webref.ru/" target="_blank">webref.ru</a> </li>
-                </ul>
-            </section>
-            <section class="main-info">
-                <h3 class="main-content-header"><i class="fas fa-code main-icon"></i>Code Example</h3>
-                <pre><code>
-                    function runYourString (arg, obj) {
-                        let func = new Function(obj.param, obj.func);
-                        return  func(arg)
-                    }
-                </code></pre>
-            </section>
-            <section class="main-info">
-                <h3 class="main-content-header"><i class="fas fa-globe-americas main-icon"></i>Languages</h3>
-                <ol>
-                    <li>English (Upper-Intermediate B2)</li>
-                    <li>Russian (Native)</li>
-                </ol>
-            </section>
-        </main>
-    </div>
-    <footer class="footer-cv">
-        <a href="https://rs.school/js/"><div class="footer-picture"></div></a>
-        <div><i class="fab fa-github footer-icon"></i><a href="https://github.com/PrikhodkoAnna" target="_blank" > Github: prikhodkoannav</a></div>
-        <div><i class="fab fa-linkedin footer-icon"></i><a href="https://github.com/PrikhodkoAnna" target="_blank">Follow me on LinkedIn</a></div>
-        <div><h3>2021</h3></div>
-    </footer>
-</div>
-</body>
+                                            So I have a good track record in logistics projects and it's time to upgrade them in a new sphere.
+                                            And now I am highly motivated to gain experience that will help me in my further professional growth as a front-end developer.
+
+                                            I have knowledge in HTML and CSS, also I have basic knowledge of JavaScript.
+                                            Besides I'm a perfect team player with a versatile personality and a sense of humor.</p>
+                                    </section>
+                                    <section id="education">
+                                        <h3 class="main-content-header"><i class="fas fa-user-graduate main-icon"></i>Education</h3>
+                                        <p class="educate main-info">2010-2014, Minsk State Economical University (logistics)</p>
+                                    </section>
+                                    <section>
+                                        <h3 class="main-content-header"><i class="fas fa-laptop-code main-icon"></i>Courses</h3>
+                                        <p class="course main-info">RSSchool Frontend Developer 2022</p>
+                                    </section>
+                                    <section>
+                                        <h3 class="main-content-header"><i class="fas fa-book main-icon"></i>Self-study (HTML, CSS, JS)</h3>
+                                        <ul class="self-ed main-info ">
+                                            <li class="self-ed-list"><a href="https://www.w3schools.com/" target="_blank">w3schools.com</a> </li>
+                                            <li class="self-ed-list"><a href="https://learn.javascript.ru/" target="_blank">learn.javascript.ru</a> </li>
+                                            <li class="self-ed-list"><a href="https://css-tricks.com/snippets/css/" target="_blank">css-tricks.com</a> </li>
+                                            <li class="self-ed-list"><a href="https://webref.ru/" target="_blank">webref.ru</a> </li>
+                                        </ul>
+                                    </section>
+                                    <section >
+                                        <h3 class="main-content-header"><i class="fas fa-code main-icon"></i>Code Example</h3>
+                                        <div class=" code-example">
+                                            <pre><code class="javascript">
+                                            function runYourString (arg, obj) {
+                                                let func = new Function(obj.param, obj.func);
+                                                return  func(arg);
+                                            }
+                                            </code></pre>
+                                        </div>
+                                    </section>
+                                    <section  id="projects">
+                                        <h3 class="main-content-header" ><i class="fas fa-align-justify main-icon"></i>Projects</h3>
+                                    <a href="https://rolling-scopes-school.github.io/prikhodkoanna-JSFEPRESCHOOL/museum" target="blank">
+                                            <img class="project-image" src="./assets/museum.jpg" alt="Museum" width="100"></img>
+                                        </a>
+                                        <p class="main-info">Landing page of museum (RSSchool Stage 0 2021 task) </p>
+                                    </section>
+                                    <section>
+                                        <h3 class="main-content-header"><i class="fas fa-globe-americas main-icon"></i>Languages</h3>
+                                        <ol class="main-info">
+                                            <li class="self-ed-list">English (Upper-Intermediate B2)</li>
+                                            <li class="self-ed-list">Russian (Native)</li>
+                                        </ol>
+                                    </section>
+                            
+                                </main>
+                            </div>
+                        </div>
+                    </div>
+                <footer class="footer-cv">
+                    <div class="row">
+                        <div class="col s6 m6 l3 xl3 footer-item">
+                            <a href="https://rs.school/js/" target="_blank"><div class="footer-picture"></div></a>
+                        </div>
+                        <div class="col s6 m6 l3 xl3 footer-item">
+                            <i class="fab fa-github footer-icon"></i><a href="https://github.com/PrikhodkoAnna" target="_blank" > Github: prikhodkoannav</a>
+                        </div>
+                        <div class="col s6 m6 l3 xl3 footer-item">
+                            <i class="fab fa-linkedin footer-icon"></i><a href="https://github.com/PrikhodkoAnna" target="_blank">Follow me on LinkedIn</a>
+                        </div>
+                        <div class="col s6 m6 l3 xl3 footer-item">
+                            <div class="footer-year">2022</div>
+                        </div>
+                    </div>
+                </footer>      
+            </div>        
+            <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+        <script>$(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    </body>
 </html>
+
+
