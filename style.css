@@ -2,42 +2,22 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color:#f5eeee ;
+    background-color: rgb(223, 220, 215);
 }
 
-.main-container{
-    width: 80%;
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.main-section {
-    display: flex;
-    width: 100%;
-}
-
-.side-bar {
-    width: 33%;
-    color: lightgrey;
-    background: #393939;
-}
-
-.main-content {
-    width: 67%;
+a {
+    text-decoration: none;
     color: black;
-    background-color: #f1f1f1;
-
-}
-
-.main-info{
-    margin: 0 15% 2% 10%;
 }
 
 p {
@@ -45,47 +25,148 @@ p {
     font-weight: bold;
 }
 
+h1, h2, h3 {
+    color: #3c4155;
+}
+
+/* Header styles start*/
+
+.header {
+    width: 100%;
+    background-color: #d9e7d8;
+}
+
+.header-container {
+    border: solid 1px #393939;
+    border-bottom: none;
+    
+}
+
+.header-list-item {
+    font-weight: 700;
+}
+  
+.nav-wrapper {
+    background-color: rgb(221, 171, 154);
+}
+
+.header-link{
+    margin: 0 auto;
+    text-decoration: none;
+    color:#393939;
+  }
+  
+.header-link:hover,
+.header-link:active {
+    color: #9D8665;
+    transition: color 0.5s;
+  }
+
 .my-photo {
     display: flex;
+    width: 100%;
     margin: 10% auto;
-    width: 70%;
-    border: 5px solid white;
+    border: 5px solid #757575;
+    border-radius: 60%;
 }
 
-.main-content li{
-    font-weight: bold;
-    list-style-type: none;
-    list-style-position: inside;
-    margin-bottom: 3%;
+.nav-wrapper {
+    background-color: rgb(221, 171, 154);
 }
 
-a{
-    text-decoration: none;
-    color: black;
+/* Header styles end*/
+
+/* Side-panel styles start*/
+
+.side-panel {
+    display: flex;
+    height: 100% ;
+    background:#757575;  
 }
 
-.side-header{
-    margin-left: 15%;
-    padding: 5% 0;
-    border-bottom: 1px solid #f2f2f2;
+.side-bar {
+    width: 100%;
     color: lightgrey;
 }
 
+.side-content {
+    margin: 30% 0;
+}
+
+
+.side-header {
+    margin: 20% 15% 7%;
+    padding: 5%;
+    border-bottom: 1px solid #393939;
+    color: #393939;
+    background-color: rgb(221, 171, 154);
+    font-weight: 800;
+}
+
 .small-side-header {
-    margin-left: 15%;
-    padding: 5% 0;
+    margin: 10% 13%;
+    padding: 2%;
+    border-bottom: 1px solid #393939;
+    font-weight: 700;
+    background-color: lightgrey;
+    color: #393939; 
+    font-weight: 700;
 }
 
 .side-bar li {
-    list-style-type: none;
-    list-style-position: inside;
     margin-bottom: 3%;
     margin-left: 15%;
+    list-style-type: none;
+    list-style-position: inside;
     font-weight: bold;
 }
 
 .side-icon {
     margin-right: 5%;
+}
+
+
+/* Side-panel styles end*/
+
+/* Main section styles start*/
+
+.main-section {
+    display: flex;
+    align-items: stretch;
+    border: solid 1px #393939;
+    border-top: none;
+    background-color: white;
+}
+.main-content {
+    width:100%;
+    color: black;
+    background-color: white;
+
+}
+
+.main-info{
+   margin: 0 15% 10% 10%;
+   font-weight: bold;
+}
+
+.main-content li {
+    list-style-type: none;
+    list-style-position: inside;
+    font-weight: bold;
+}
+
+.main-content-header {
+    padding: 3% ;
+    border-bottom: 1px solid;
+    margin-bottom: 2%;
+    margin-right:  15%;
+    background-color: rgb(221, 171, 154);
+    font-size: 150%;
+    font-weight: 800;
+} 
+
+.self-ed-list {
+    margin-bottom: 3%;
 }
 
 .main-icon {
@@ -96,56 +177,135 @@ a{
     margin-top: 5%;
 }
 
-h1, h2, h3 {
-    color: #3c4155;
-}
-
-header {
-    text-align: center;
-    margin: 35px auto;
-}
-
 .name {
-    font-size: 400%;
     padding: 3%;
-    background: #a5a5a5;
-    box-shadow: 0px 10px 8px #888888
+    margin-top: 15%;
+    background-color: #757575; /*#a5a5a5;*/
+    box-shadow: 0px 10px 8px #888888;
+    color: white;
+    font-size: 400%;
+    font-weight: 700;
 }
 
 .goal {
-    font-size: 250%;
-    padding-bottom: 80px;
-    margin-top: 5%
+    margin-top: 15%;
+    padding: 3%;
+    font-weight: 900;
+    font-size: 300%;
 }
 
-.main-content-header {
-    font-size: 150%;
-    padding: 10px 0;
-    border-bottom: 1px solid;
-    margin-bottom: 2%;
+.code-example {
+    width: 70%;
+    padding-left: 8%;
+    padding-bottom: 15px;;
+    margin-bottom:  10%;
 }
+
+pre {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0 10%;
+    white-space:pre-line;
+    
+}
+.project-image {
+    width: 80%;
+    margin-bottom: 3%;
+}
+/* Main section styles end*/
+
+/* Footer styles start*/
 
 .footer-cv {
     display: flex;
-    font-weight: bold;
-    justify-content: center;
-    padding-top: 20px;
-    padding-left: 4%;
-    padding-right: 7%;
-    padding-bottom: 20px;
+    justify-content: space-between;
     align-items: center;
-    background: #b7bfc1 ;
-    color: #fff;
+    padding: 2%;
+    font-weight: bold;
+    background-color: rgb(221, 171, 154);;
+    color: white;
 }
 
 .footer-picture {
-    background-image: url("https://rs.school/images/rs_school_js.svg");
-    background-size: contain;
     width: 100px;
     height: 38px;
-    margin-right: 100px;
+    margin-right: 50px;
+    background-image: url("https://rs.school/images/rs_school_js.svg");
+    background-size: contain;
 }
 
 .footer-icon {
     margin-right: 2%;
 }
+
+.footer-year {
+    color: #393939;
+    font-size: 200%;
+}
+
+.footer-cv .row {
+    margin-bottom: 0;
+}
+
+/* Footer styles end*/
+
+/*Media start*/
+
+@media screen and (max-width: 1366px) {
+    .side-bar-list {
+        font-size: 90%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .side-header,
+    .small-side-header {
+       font-size: 90%;
+    }
+
+    .side-bar-list {
+        font-size: 70%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .side-header,
+    .small-side-header {
+       font-size: 200%;
+    }
+
+    .side-bar-list {
+        font-size: 180%;
+    }
+
+    .side-panel {
+        height: 45%;
+    }
+
+    .my-photo {
+        width: 70%;
+    }
+}
+
+
+@media screen and (max-width: 665px) {
+    .side-header,
+    .small-side-header {
+       font-size: 150%;
+    }
+
+    .side-bar-list {
+        font-size: 140%;
+    }
+
+    .side-panel {
+        height: 40%;
+    }
+
+    .footer-item {
+        margin-bottom: 2%;
+    }
+    
+}
+
