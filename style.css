@@ -74,6 +74,10 @@ h1, h2, h3 {
     background-color: rgb(221, 171, 154);
 }
 
+#margin-off {
+    margin: 0;
+}
+
 /* Header styles end*/
 
 /* Side-panel styles start*/
@@ -81,7 +85,7 @@ h1, h2, h3 {
 .side-panel {
     display: flex;
     height: 100% ;
-    background:#757575;  
+    background:#757575;
 }
 
 .side-bar {
@@ -228,11 +232,7 @@ pre {
 }
 
 .footer-picture {
-    width: 100px;
-    height: 38px;
     margin-right: 50px;
-    background-image: url("https://rs.school/images/rs_school_js.svg");
-    background-size: contain;
 }
 
 .footer-icon {
