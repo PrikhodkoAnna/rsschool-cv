@@ -74,7 +74,8 @@ h1, h2, h3 {
     background-color: rgb(221, 171, 154);
 }
 
-#margin-off {
+#margin-off-first,
+#margin-off-second {
     margin: 0;
 }
 
